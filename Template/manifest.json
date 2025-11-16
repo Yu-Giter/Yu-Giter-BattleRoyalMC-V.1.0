@@ -1,9 +1,9 @@
 {
     "format_version": 2,
     "header": {
-      "name": "スクリプトAPIのテンプレート",
-      "description": "これはテンプレートです",
-      "uuid": "b1ef9620-c58e-4fa3-bdcd-f5f1d3c71c31",
+      "name": "YC-BR-Addon",
+      "description": "バトルロイヤルマップ用アドオン-v1.0",
+      "uuid": "31c532c2-d245-49d8-84fc-cf36ed0d0bc3",
       "version": [0, 1, 0],
       "min_engine_version": [1, 20, 0]
     },
@@ -11,7 +11,7 @@
       {
         "type": "script",
         "language": "javascript",
-        "uuid": "b1ef9620-c58e-4fa3-bdcd-f5f1d3c71c32",
+        "uuid": "cc397817-6e81-4b33-a482-1b7554109640",
         "entry": "scripts/main.js",
         "version": [0, 1, 0]
       }
