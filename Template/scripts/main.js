@@ -36,7 +36,7 @@ function show_form_2(player){
             player.sendMessage("フォームはキャンセルされ、試合も開始していません");
             return;
         }
-        player.sendMessage("試合時間は" + String(response.formValues[0] + "秒です"));
-        
+        player.sendMessage("試合時間は" + String(response.formValues[0]) + "秒です");
+        player.sendMessage("試合の管理者は" + String(response.formValues[1]) + "です");
     }
 }
