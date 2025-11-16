@@ -2,7 +2,7 @@
     "format_version": 2,
     "header": {
       "name": "YC-BR-Addon",
-      "description": "バトルロイヤルマップ用アドオン-v1.0",
+      "description": "バトルロイヤルマップ用アドオン-v1.0.1",
       "uuid": "31c532c2-d245-49d8-84fc-cf36ed0d0bc3",
       "version": [0, 1, 0],
       "min_engine_version": [1, 20, 0]

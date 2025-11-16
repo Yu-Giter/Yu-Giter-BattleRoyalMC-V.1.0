@@ -4,7 +4,6 @@ import { world, system, ui } from "@minecraft/server";
 //ここにスクリプトを記述
 
 //プレイヤー全員の名前を配列型に格納(格納変数->names)
-import { world } from '@minecraft/server';
 
 function getAllPlayerNames() {
     const playerNames = [];
