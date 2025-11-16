@@ -40,3 +40,10 @@ function show_form_2(player){
         player.sendMessage("試合の管理者は" + String(response.formValues[1]) + "です");
     }
 }
+
+server.world.afterEvents.itemUse.subscribe(ev -> {
+    if(ev.itemStack.typeId == "minecraft:lapis_lazuli"){
+        show_form_2(ev.source);
+    }
+}
+//Over
