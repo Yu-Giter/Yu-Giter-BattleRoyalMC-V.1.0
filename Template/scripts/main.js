@@ -24,12 +24,12 @@ world.afterEvents.worldInitialize.subscribe(() => {
 
 //管理コンソールファンクション
 function show_form_2(player){
-    const form - new ui.ModalFormData();
+    const form = new ui.ModalFormData();
     //スライダーは名前,最小,最大,単位,デフォルト
     form.slider("ゲーム時間(秒)/min5/def15/max20(min)",300,1200,300,900);
     //ドロップダウンは名前,選択肢(配列型{今回は変数に配列を格納})
     form.dropdown("試合の管理者を選択してください",names);
-    form.show(player).then(response => {
+    form.show(player).then();response => {
         if (response.canceled){
             //フォームキャンセル時
             player.sendMessage("フォームはキャンセルされ、試合も開始していません");
@@ -54,9 +54,9 @@ function show_form_2(player){
 //Over
 
 //フォーム起動監視
-server.world.afterEvents.itemUse.subscribe(ev -> {
+server.world.afterEvents.itemUse.subscribe(ev => {
     if(ev.itemStack.typeId == "minecraft:lapis_lazuli"){
         show_form_2(ev.source);
     }
-}
+});
 //Over
